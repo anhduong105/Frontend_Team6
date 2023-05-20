@@ -3,7 +3,7 @@ import "./style.css";
 import axios from "axios";
 import { validateMssv, validateName, validateBirthday, validateAddress } from "../../scripts/validateForm";
 
-function AddNewPanel({students}) {
+function AddNewPanel({ students }) {
   const [modal, setModal] = useState(false);
   const [mssv, setMssv] = useState("")
   const [name, setName] = useState("")
@@ -56,28 +56,35 @@ function AddNewPanel({students}) {
         Thêm mới
       </button>
       {modal && (
-        <div className="addnew-panel">
-          {/* Nội dung và giao diện của popup panel */}
-          <form className="form-group form-group-lg" >
-            <label >Mã sinh viên:</label>
-            <input className="form-control form-control-sm" type="text" onChange={(e) => setMssv(e.target.value)} />
-            {mssvError && <div className="error">{mssvError}</div>}
-
-            <label>Họ tên:</label>
-            <input className="form-control form-control-sm" type="text" onChange={(e) => setName(e.target.value)} />
-            {nameError && <div className="error">{nameError}</div>}
-
-            <label>Ngày sinh:</label>
-            <input className="form-control form-control-sm" type="text" onChange={(e) => setBirthday(e.target.value)} />
-            {birthdayError && <div className="error">{birthdayError}</div>}
-
-            <label>Quê quán:</label>
-            <input className="form-control form-control-sm" type="text" onChange={(e) => setAddress(e.target.value)} />
-            {addressError && <div className="error">{addressError}</div>}
-            
-            <button type="button" className="btn btn-primary" onClick={handleSave}>Lưu</button>
-            <button type="button" className="btn btn-primary" onClick={handleCancel}>Hủy</button>
-          </form>
+        <div className="modal">
+          <div className="addnew-panel">
+            {/* Nội dung và giao diện của popup panel */}
+            <form className="form-group form-group-lg" >
+              <div>
+                <label >Mã sinh viên:</label>
+                <input className="form-control form-control-sm" type="text" onChange={(e) => setMssv(e.target.value)} />
+                {mssvError && <div className="error">{mssvError}</div>}
+              </div>
+              <div>
+                <label>Họ tên:</label>
+                <input className="form-control form-control-sm" type="text" onChange={(e) => setName(e.target.value)} />
+                {nameError && <div className="error">{nameError}</div>}
+              </div>
+              <div>
+                <label>Ngày sinh:</label>
+                <input className="form-control form-control-sm" type="text" onChange={(e) => setBirthday(e.target.value)} />
+                {birthdayError && <div className="error">{birthdayError}</div>}
+              </div>
+              <div>
+                <label>Quê quán:</label>
+              <input className="form-control form-control-sm" type="text" onChange={(e) => setAddress(e.target.value)} />
+              {addressError && <div className="error">{addressError}</div>}
+              </div>
+              
+              <button type="button" className="save" onClick={handleSave}>Lưu</button>
+              <button type="button" className="cancel" onClick={handleCancel}>Hủy</button>
+            </form>
+          </div>
         </div>
       )}
     </div>

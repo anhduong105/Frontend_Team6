@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .form {
     max-width: 400px;
@@ -32,10 +32,11 @@
     font-size: 14px;
     height: 30px;
     width: 50px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
-    text-align: center; 
-    border: 2px solid #4CAF50
+    text-align: center;
+    border: 2px solid #4caf50;
+    cursor: pointer;
 }
 
 .edit:hover {
@@ -44,9 +45,22 @@
     color: green;
 }
 
+.name {
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.birthday {
+    margin-left: 20px;
+    margin-right: 10px;
+}
 
 label {
     margin-right: 15px;
+}
+
+input {
+    text-align: left;
 }
 
 .input-field {
@@ -58,10 +72,11 @@ label {
     font-size: 14px;
     height: 30px;
     width: 50px;
-    background-color: greenyellow;
+    background-color: #009898;
     color: white;
     text-align: center;
-    border: 2px solid greenyellow;
+    border: 2px solid #009898;
+    cursor: pointer;
 }
 
 .cancel {
@@ -75,4 +90,9 @@ label {
     color: white;
     text-align: center;
     border: 2px solid gray;
+    cursor: pointer;
+}
+
+.group-button {
+    text-align: right;
 }

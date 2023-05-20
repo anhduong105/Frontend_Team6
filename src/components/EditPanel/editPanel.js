@@ -38,13 +38,14 @@ function EditPanel({ student, updateStudent }) {
         <div className="modal">
           <div className="popup-panel">
             <form className="form">
+              <h4>Chỉnh sửa thông tin</h4>
               <div className="input-field">
                 <label>Mã sinh viên:</label>
                 <input type="text" value={student.mssv} disabled />
               </div>
 
               <div className="input-field">
-                <label>Họ tên:</label>
+                <label className="name">Họ tên:</label>
                 <input
                   type="text"
                   value={newData.name}
@@ -53,7 +54,7 @@ function EditPanel({ student, updateStudent }) {
               </div>
 
               <div className="input-field">
-                <label>Ngày sinh:</label>
+                <label className="birthday">Ngày sinh:</label>
                 <input
                   type="text"
                   value={newData.birthday}
@@ -64,7 +65,7 @@ function EditPanel({ student, updateStudent }) {
               </div>
 
               <div className="input-field">
-                <label>Quê quán:</label>
+                <label className="birthday">Quê quán:</label>
                 <input
                   type="text"
                   value={newData.address}
@@ -73,9 +74,11 @@ function EditPanel({ student, updateStudent }) {
                   }
                 />
               </div>
-
-              <button className="save" onClick={() => handleSave(student.mssv)}>Lưu</button>
+              <div className="group-button">
+                <button className="save" onClick={() => handleSave(student.mssv)}>Lưu</button>
               <button className="cancel" onClick={handleCancel}>Hủy</button>
+              </div>
+              
             </form>
           </div>
         </div>

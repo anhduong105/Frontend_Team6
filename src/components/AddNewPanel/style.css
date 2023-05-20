@@ -6,6 +6,19 @@
     margin-left: -535px;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .addnew-panel {
     position: absolute;
     top: 40%;
@@ -22,4 +35,28 @@
     max-width: 600px;
 }
 
+.save {
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    width: 50px;
+    background-color: #009898;
+    color: white;
+    text-align: center;
+    border: 2px solid #009898;
+    cursor: pointer;
+}
 
+.cancel {
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    width: 50px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border: 2px solid gray;
+    cursor: pointer;
+}
