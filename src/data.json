@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "mssv": "20020001",
+            "name": "Nguyen Van A",
+            "birthday": "01/01/2002",
+            "address": "Hà Nội"
+        },
+        {
+            "mssv": "20020002",
+            "name": "Tran Thi B",
+            "birthday": "01/02/2002",
+            "address": "Nam Định"
+        },
+        {
+            "mssv": "20020003",
+            "name": "Pham Van C",
+            "birthday": "01/03/2002",
+            "address": "Hòa Bình"
+        },
+        {
+            "mssv": "20020004",
+            "name": "Nguyen Quang D",
+            "birthday": "01/04/2002",
+            "address": "Ninh Bình"
+        },
+        {
+            "mssv": "20020005",
+            "name": "Do Thi G",
+            "birthday": "01/05/2002",
+            "address": "Hải Dương"
+        },
+        {
+            "mssv": "20020006",
+            "name": "Pham Huy H",
+            "birthday": "01/06/2002",
+            "address": "Thái Bình"
+        },
+        {
+            "mssv": "20020007",
+            "name": "Pham Van K",
+            "birthday": "01/07/2002",
+            "address": "Hà Nội"
+        },
+        {
+            "mssv": "20020008",
+            "name": "Nguyen Duc L",
+            "birthday": "01/08/2002",
+            "address": "Yên Bái"
+        },
+        {
+            "mssv": "20020009",
+            "name": "Bui Van M",
+            "birthday": "01/09/2002",
+            "address": "An Giang"
+        },
+        {
+            "mssv": "200200010",
+            "name": "Do Ngoc N",
+            "birthday": "01/10/2002",
+            "address": "Thanh Hóa"
+        }
+    ]
+}

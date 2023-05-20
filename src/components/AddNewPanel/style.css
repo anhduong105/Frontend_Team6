@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+}
+
+.addButton {
+    margin-left: -535px;
+}
+
+.addnew-panel {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f1f1f1;
+    padding: 40px 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+.addnew-form {
+    max-width: 600px;
+}
+
+
